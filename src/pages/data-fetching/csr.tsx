@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Title } from "@/styles/pages/Home";
+import { Container, Title } from "@/styles/GlobalStyle";
 
 interface IProduct {
   id: string;
@@ -22,9 +22,8 @@ export default function ClientSideRendering() {
 
   return (
     <div>
-      <section>
-        <Title>CSR</Title>
-
+      <Title>CSR</Title>
+      <Container>
         <ul>
           {recommendedProducts.map((recommendedProduct) => {
             return (
@@ -32,7 +31,7 @@ export default function ClientSideRendering() {
             );
           })}
         </ul>
-      </section>
+      </Container>
     </div>
   );
 }

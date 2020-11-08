@@ -15,7 +15,7 @@ export default function Page() {
    * Muitas vezes as libs são muito pesadas e é pouco utilizada pelo usuário.
    */
   async function handleSum() {
-    const { sum } = (await import("@/util/math")).default;
+    const { sum } = (await import("@/lib/math")).default;
     alert(sum(3, 5));
   }
 
